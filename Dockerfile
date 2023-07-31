@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD streamlit run Home.py --server.port=${PORT_WEB} --server.address=0.0.0.0
+CMD streamlit run app.py --server.port=${PORT_WEB} --server.address=0.0.0.0
