@@ -8,9 +8,7 @@ COPY requirements.txt ./
 
 RUN pip install --upgrade pip
 
-RUN apt update
-
-RUN apt install libomp-dev -y
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 RUN pip install --no-cache-dir -r requirements.txt
 
